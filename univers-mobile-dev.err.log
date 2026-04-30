@@ -1,0 +1,8 @@
+::ffff:127.0.0.1 - - [28/Apr/2026 17:09:03] "GET / HTTP/1.1" 200 -
+::1 - - [28/Apr/2026 17:09:06] "GET / HTTP/1.1" 200 -
+::1 - - [28/Apr/2026 17:09:06] code 404, message File not found
+::1 - - [28/Apr/2026 17:09:06] "GET /styles.css HTTP/1.1" 200 -
+::1 - - [28/Apr/2026 17:09:06] "GET /logo.png HTTP/1.1" 404 -
+::1 - - [28/Apr/2026 17:09:06] code 404, message File not found
+::1 - - [28/Apr/2026 17:09:06] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [28/Apr/2026 17:10:56] "GET /logo.png HTTP/1.1" 200 -

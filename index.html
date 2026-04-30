@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Univers Mobile | Réparation de téléphone</title>
+    <meta
+      name="description"
+      content="Univers Mobile, boutique de réparation de téléphone rapide, fiable et professionnelle."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#accueil" aria-label="Univers Mobile accueil">
+          <span class="brand-mark brand-mark-image">
+            <img src="./logo.png" alt="Logo Univers Mobile" />
+          </span>
+          <span class="brand-text">
+            <strong>Univers Mobile</strong>
+            <small>Réparation téléphone</small>
+          </span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <a href="#services">Services</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="accueil">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Réparation express à prix clair</span>
+            <h1>Univers Mobile, la boutique de confiance pour redonner vie à votre téléphone.</h1>
+            <p>
+              Écran cassé, batterie fatiguée, connecteur de charge ou diagnostic complet :
+              nous intervenons avec rapidité, transparence et soin.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#services">Voir les tarifs</a>
+              <a class="btn btn-secondary" href="#contact">Demander un devis</a>
+            </div>
+            <ul class="hero-badges" aria-label="Points forts">
+              <li>Devis gratuit</li>
+              <li>Pièces de qualité</li>
+              <li>Intervention rapide</li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" aria-label="Aperçu des services">
+            <div class="stats">
+              <article>
+                <strong>30 min</strong>
+                <span>réparations courantes</span>
+              </article>
+              <article>
+                <strong>+1200</strong>
+                <span>appareils traités</span>
+              </article>
+              <article>
+                <strong>4.9/5</strong>
+                <span>avis clients</span>
+              </article>
+            </div>
+            <div class="device-card">
+              <div class="device-screen">
+                <div class="device-reflection"></div>
+                <div class="device-content">
+                  <span>Univers Mobile</span>
+                  <strong>Réparation premium</strong>
+                  <p>Diagnostic, écran, batterie, charge, caméra.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Services & prix</span>
+            <h2>Des prestations simples, lisibles et sans mauvaise surprise.</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Remplacement d'écran</h3>
+              <p>Pour smartphones Apple, Samsung, Xiaomi et autres modèles compatibles.</p>
+              <div class="price">À partir de 69 €</div>
+            </article>
+            <article class="service-card">
+              <h3>Changement batterie</h3>
+              <p>Récupérez une autonomie fiable et une charge stable au quotidien.</p>
+              <div class="price">À partir de 39 €</div>
+            </article>
+            <article class="service-card">
+              <h3>Connecteur de charge</h3>
+              <p>Réparation du port USB-C ou Lightning lorsqu’il charge mal ou plus du tout.</p>
+              <div class="price">À partir de 49 €</div>
+            </article>
+            <article class="service-card">
+              <h3>Diagnostic complet</h3>
+              <p>Analyse de panne et estimation claire avant intervention.</p>
+              <div class="price">29 €</div>
+            </article>
+            <article class="service-card">
+              <h3>Protection & accessoires</h3>
+              <p>Verres trempés, coques et conseils pour prolonger la durée de vie du téléphone.</p>
+              <div class="price">Dès 9 €</div>
+            </article>
+            <article class="service-card highlight">
+              <h3>Nettoyage interne</h3>
+              <p>Entretien approfondi pour poussière, humidité légère et performances dégradées.</p>
+              <div class="price">À partir de 35 €</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="apropos">
+        <div class="container about-grid">
+          <div>
+            <span class="eyebrow">À propos</span>
+            <h2>Un atelier de proximité, organisé pour aller vite et bien.</h2>
+          </div>
+          <div class="about-card">
+            <p>
+              Chez Univers Mobile, nous privilégions une approche claire: diagnostic précis,
+              explication simple des options, puis réparation avec des composants adaptés.
+              L’objectif est de rendre votre téléphone opérationnel sans détour inutile.
+            </p>
+            <p>
+              Nous accueillons les urgences comme les réparations planifiées, avec un service
+              pensé pour les particuliers et les professionnels.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div class="section-heading compact">
+            <span class="eyebrow">Contact</span>
+            <h2>Décrivez votre panne, nous vous répondons rapidement.</h2>
+            <p>Appelez-nous, passez en boutique ou envoyez une demande via le formulaire.</p>
+          </div>
+
+          <form class="contact-form" action="https://formspree.io/f/mjglbaqj" method="POST">
+            <input type="hidden" name="_replyto" id="replyto" value="" />
+            <div class="field-row">
+              <label>
+                Nom
+                <input type="text" name="name" placeholder="Votre nom" required />
+              </label>
+              <label>
+                Téléphone
+                <input type="tel" name="phone" placeholder="06 00 00 00 00" required />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                Email
+                <input type="email" name="email" placeholder="vous@exemple.com" required />
+              </label>
+              <label>
+                Appareil
+                <input type="text" name="device" placeholder="iPhone 13, Galaxy S22..." />
+              </label>
+            </div>
+            <label>
+              Service souhaité
+              <input type="text" name="service" placeholder="Écran, batterie, diagnostic..." />
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Décrivez le problème rencontré"
+                required
+              ></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+            <p class="form-success" hidden>
+              Votre demande a bien été envoyée, nous vous répondrons rapidement !
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      const form = document.querySelector('.contact-form');
+      const replyto = document.querySelector('#replyto');
+      const emailInput = form?.querySelector('input[name="email"]');
+      const successMessage = form?.querySelector('.form-success');
+
+      if (form && replyto && emailInput && successMessage) {
+        const syncReplyTo = () => {
+          replyto.value = emailInput.value.trim();
+        };
+
+        emailInput.addEventListener('input', syncReplyTo);
+        syncReplyTo();
+
+        form.addEventListener('submit', async (event) => {
+          event.preventDefault();
+
+          syncReplyTo();
+
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { Accept: 'application/json' },
+          });
+
+          if (response.ok) {
+            form.reset();
+            successMessage.hidden = false;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
