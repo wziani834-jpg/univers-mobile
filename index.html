@@ -215,8 +215,13 @@
           });
 
           if (response.ok) {
-            form.reset();
-            successMessage.hidden = false;
+          form.reset();
+          successMessage.hidden = false;
+          } else {
+          alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+          }
+            
+          
           }
         });
       }
