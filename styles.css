@@ -19,6 +19,18 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -99,6 +111,7 @@ nav a:hover {
 
 .hero {
   padding: 72px 0 40px;
+  animation: fadeInUp 0.75s ease both;
 }
 
 .hero-grid {
@@ -158,11 +171,11 @@ nav a:hover {
   border-radius: 14px;
   border: 1px solid transparent;
   font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
 }
 
 .btn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-3px);
 }
 
 .btn-primary {
@@ -284,6 +297,7 @@ nav a:hover {
 
 .section {
   padding: 56px 0;
+  animation: fadeInUp 0.7s ease both;
 }
 
 .section-heading {
@@ -317,6 +331,17 @@ nav a:hover {
   border: 1px solid rgba(16, 35, 61, 0.08);
   border-radius: var(--radius);
   box-shadow: 0 14px 36px rgba(16, 35, 61, 0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.service-card:hover,
+.repair-card:hover,
+.about-card:hover,
+.faq-card:hover,
+.contact-form:hover {
+  transform: translateY(-5px);
+  border-color: rgba(17, 17, 17, 0.14);
+  box-shadow: 0 20px 44px rgba(16, 35, 61, 0.12);
 }
 
 .service-card {
@@ -535,6 +560,29 @@ nav a:hover {
   color: var(--primary-dark);
   font-weight: 700;
   line-height: 1.5;
+}
+
+@supports (animation-timeline: view()) {
+  .section {
+    opacity: 0;
+    animation-timeline: view();
+    animation-range: entry 12% cover 32%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @media (max-width: 920px) {
