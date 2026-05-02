@@ -444,6 +444,12 @@ nav a:hover {
   color: var(--primary-dark);
 }
 
+.contact-details .maps-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .hours-card {
   margin-top: 16px;
   padding: 18px;
