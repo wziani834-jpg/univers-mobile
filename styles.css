@@ -193,6 +193,13 @@ nav a:hover {
   border-color: rgba(17, 17, 17, 0.14);
 }
 
+.btn-snapchat {
+  background: #fffc00;
+  color: #111;
+  border-color: rgba(17, 17, 17, 0.12);
+  box-shadow: 0 12px 24px rgba(17, 17, 17, 0.1);
+}
+
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
@@ -476,6 +483,41 @@ nav a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+}
+
+.social-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+}
+
+.whatsapp-link {
+  background: #25d366;
+  color: #071b10;
+  box-shadow: 0 12px 24px rgba(37, 211, 102, 0.18);
+}
+
+.snapchat-link {
+  background: #fffc00;
+  color: #111;
+  box-shadow: 0 12px 24px rgba(17, 17, 17, 0.08);
 }
 
 .hours-card {
@@ -823,6 +865,15 @@ nav a:hover {
   .hours-card {
     border-radius: 14px;
     padding: 16px;
+  }
+
+  .social-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .social-link {
+    width: 100%;
   }
 
   .contact-form input,
