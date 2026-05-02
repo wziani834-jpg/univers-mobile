@@ -6,6 +6,9 @@
   --muted: #6f5f53;
   --primary: #111111;
   --primary-dark: #000000;
+  --accent: #0f7cff;
+  --accent-soft: rgba(15, 124, 255, 0.12);
+  --accent-line: rgba(15, 124, 255, 0.26);
   --line: rgba(17, 17, 17, 0.12);
   --shadow: 0 24px 60px rgba(17, 17, 17, 0.12);
   --radius: 20px;
@@ -106,7 +109,7 @@ nav {
 }
 
 nav a:hover {
-  color: var(--primary-dark);
+  color: var(--accent);
 }
 
 .hero {
@@ -127,8 +130,8 @@ nav a:hover {
   gap: 8px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(17, 17, 17, 0.08);
-  color: var(--primary-dark);
+  background: var(--accent-soft);
+  color: #0756b8;
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -179,9 +182,9 @@ nav a:hover {
 }
 
 .btn-primary {
-  background: linear-gradient(145deg, #2b211b, var(--primary-dark));
+  background: linear-gradient(145deg, #1c6fe6, var(--accent));
   color: #fff;
-  box-shadow: 0 14px 28px rgba(17, 17, 17, 0.2);
+  box-shadow: 0 14px 28px rgba(15, 124, 255, 0.24);
 }
 
 .btn-secondary {
@@ -204,7 +207,7 @@ nav a:hover {
   padding: 10px 14px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(16, 35, 61, 0.08);
+  border: 1px solid var(--accent-line);
 }
 
 .hero-panel {
@@ -255,8 +258,8 @@ nav a:hover {
   border-radius: 26px;
   overflow: hidden;
   background:
-    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.42), transparent 30%),
-    linear-gradient(160deg, #2a201a, #111111 50%, #6f5f53 150%);
+    radial-gradient(circle at 30% 20%, rgba(15, 124, 255, 0.32), transparent 30%),
+    linear-gradient(160deg, #101827, #111111 50%, #0f7cff 150%);
 }
 
 .device-reflection {
@@ -340,8 +343,8 @@ nav a:hover {
 .faq-card:hover,
 .contact-form:hover {
   transform: translateY(-5px);
-  border-color: rgba(17, 17, 17, 0.14);
-  box-shadow: 0 20px 44px rgba(16, 35, 61, 0.12);
+  border-color: var(--accent-line);
+  box-shadow: 0 20px 44px rgba(15, 124, 255, 0.12);
 }
 
 .service-card {
@@ -365,8 +368,8 @@ nav a:hover {
   display: inline-flex;
   padding: 10px 14px;
   border-radius: 999px;
-  background: var(--surface-soft);
-  color: var(--primary-dark);
+  background: var(--accent-soft);
+  color: #0756b8;
   font-weight: 800;
 }
 
@@ -466,7 +469,7 @@ nav a:hover {
 .contact-details a {
   width: fit-content;
   font-weight: 800;
-  color: var(--primary-dark);
+  color: var(--accent);
 }
 
 .contact-details .maps-link {
@@ -539,8 +542,8 @@ nav a:hover {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid rgba(17, 17, 17, 0.16);
-  border-color: rgba(17, 17, 17, 0.28);
+  outline: 2px solid var(--accent-soft);
+  border-color: var(--accent);
 }
 
 .contact-form textarea {
@@ -556,8 +559,8 @@ nav a:hover {
   margin: 16px 0 0;
   padding: 14px 16px;
   border-radius: 14px;
-  background: rgba(17, 17, 17, 0.08);
-  color: var(--primary-dark);
+  background: var(--accent-soft);
+  color: #0756b8;
   font-weight: 700;
   line-height: 1.5;
 }
