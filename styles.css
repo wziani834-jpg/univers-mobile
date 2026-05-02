@@ -50,18 +50,6 @@ a {
   text-decoration: none;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .container {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
@@ -203,26 +191,6 @@ nav a:hover {
   background: #fff;
   color: var(--primary-dark);
   border-color: rgba(17, 17, 17, 0.14);
-}
-
-.btn-snapchat {
-  background: rgba(255, 252, 0, 0.14);
-  color: #4d4520;
-  border-color: rgba(77, 69, 32, 0.16);
-  box-shadow: 0 12px 24px rgba(77, 69, 32, 0.08);
-}
-
-.icon-btn,
-.icon-link {
-  gap: 10px;
-}
-
-.icon-btn svg,
-.icon-link svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-  flex: 0 0 auto;
 }
 
 .hero-badges {
@@ -502,57 +470,6 @@ nav a:hover {
   width: fit-content;
   font-weight: 800;
   color: var(--accent);
-}
-
-.contact-details .maps-link {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-}
-
-.social-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 14px;
-}
-
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 42px;
-  padding: 10px 14px;
-  border-radius: 12px;
-  font-weight: 800;
-  line-height: 1.2;
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-}
-
-.social-link:hover {
-  transform: translateY(-3px);
-}
-
-.icon-link {
-  min-width: 0;
-}
-
-.whatsapp-link {
-  background: rgba(37, 211, 102, 0.09);
-  color: #1f8a46;
-  box-shadow: 0 12px 24px rgba(37, 211, 102, 0.12);
-}
-
-.snapchat-link {
-  background: rgba(255, 252, 0, 0.08);
-  color: #2a2612;
-  box-shadow: 0 12px 24px rgba(42, 38, 18, 0.08);
-}
-
-.btn-snapchat:hover,
-.snapchat-link:hover {
-  background: rgba(255, 252, 0, 0.14);
-  box-shadow: 0 16px 30px rgba(42, 38, 18, 0.12);
 }
 
 .hours-card {
@@ -900,15 +817,6 @@ nav a:hover {
   .hours-card {
     border-radius: 14px;
     padding: 16px;
-  }
-
-  .social-actions {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .social-link {
-    width: 100%;
   }
 
   .contact-form input,
