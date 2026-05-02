@@ -538,21 +538,21 @@ nav a:hover {
 }
 
 .whatsapp-link {
-  background: #25d366;
-  color: #071b10;
-  box-shadow: 0 12px 24px rgba(37, 211, 102, 0.18);
+  background: rgba(37, 211, 102, 0.09);
+  color: #1f8a46;
+  box-shadow: 0 12px 24px rgba(37, 211, 102, 0.12);
 }
 
 .snapchat-link {
-  background: rgba(255, 252, 0, 0.12);
-  color: #4d4520;
-  box-shadow: 0 12px 24px rgba(77, 69, 32, 0.08);
+  background: rgba(255, 252, 0, 0.08);
+  color: #2a2612;
+  box-shadow: 0 12px 24px rgba(42, 38, 18, 0.08);
 }
 
 .btn-snapchat:hover,
 .snapchat-link:hover {
-  background: rgba(255, 252, 0, 0.2);
-  box-shadow: 0 16px 30px rgba(77, 69, 32, 0.12);
+  background: rgba(255, 252, 0, 0.14);
+  box-shadow: 0 16px 30px rgba(42, 38, 18, 0.12);
 }
 
 .hours-card {
