@@ -1,4 +1,5 @@
-const OWNER_EMAIL = "wziani834@gmail.com";
+const OWNER_EMAIL = "said@univers-mobile.store";
+const FROM_EMAIL = "Said <said@univers-mobile.store>";
 const SITE_NAME = "Univers Mobile";
 const SITE_URL = "https://univers-mobile.store";
 
@@ -92,7 +93,6 @@ async function sendResendEmail(apiKey, payload) {
 export async function onRequestPost({ request, env }) {
   try {
     const apiKey = env.RESEND_API_KEY;
-    const fromEmail = env.RESEND_FROM_EMAIL || "Univers Mobile <contact@univers-mobile.store>";
 
     if (!apiKey) {
       return Response.json({ error: "RESEND_API_KEY manquante" }, { status: 500 });
@@ -116,7 +116,7 @@ export async function onRequestPost({ request, env }) {
     }
 
     const ownerEmailPromise = sendResendEmail(apiKey, {
-      from: fromEmail,
+      from: FROM_EMAIL,
       to: OWNER_EMAIL,
       subject: `Nouvelle demande de contact - ${data.name}`,
       html: buildOwnerHtml(data),
@@ -124,7 +124,7 @@ export async function onRequestPost({ request, env }) {
     });
 
     const confirmationEmailPromise = sendResendEmail(apiKey, {
-      from: fromEmail,
+      from: FROM_EMAIL,
       to: data.email,
       subject: `Confirmation de votre demande - ${SITE_NAME}`,
       html: buildConfirmationHtml(data),
