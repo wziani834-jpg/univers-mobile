@@ -606,19 +606,20 @@ nav a:hover {
 }
 
 .confirmation-hero {
-  min-height: 100vh;
+  min-height: 100svh;
   display: grid;
   align-items: center;
   padding: 34px 0;
   background:
-    linear-gradient(130deg, rgba(17, 17, 17, 0.08), transparent 34%),
-    radial-gradient(circle at 76% 18%, rgba(15, 124, 255, 0.22), transparent 30%);
+    radial-gradient(circle at top right, rgba(15, 124, 255, 0.18), transparent 28%),
+    linear-gradient(180deg, rgba(255, 247, 240, 0.72), rgba(244, 229, 216, 0.95));
 }
 
 .confirmation-shell {
   display: grid;
   justify-items: center;
-  gap: 22px;
+  gap: 18px;
+  width: min(760px, 100%);
 }
 
 .confirmation-brand img {
@@ -629,7 +630,7 @@ nav a:hover {
 }
 
 .confirmation-card {
-  width: min(720px, 100%);
+  width: 100%;
   padding: clamp(26px, 5vw, 48px);
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(255, 247, 240, 0.98), rgba(255, 255, 255, 0.92));
@@ -681,36 +682,6 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
-}
-
-.confirmation-info {
-  width: min(820px, 100%);
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.confirmation-info article {
-  padding: 16px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.68);
-  border: 1px solid rgba(17, 17, 17, 0.08);
-  text-align: center;
-}
-
-.confirmation-info strong,
-.confirmation-info span {
-  display: block;
-}
-
-.confirmation-info strong {
-  margin-bottom: 6px;
-  color: var(--text);
-}
-
-.confirmation-info span {
-  color: var(--muted);
-  line-height: 1.4;
 }
 
 @supports (animation-timeline: view()) {
@@ -1010,11 +981,11 @@ nav a:hover {
 
   .confirmation-hero {
     align-items: start;
-    padding: 22px 0;
+    padding: 18px 0;
   }
 
   .confirmation-shell {
-    gap: 16px;
+    gap: 14px;
   }
 
   .confirmation-brand img {
@@ -1023,7 +994,7 @@ nav a:hover {
   }
 
   .confirmation-card {
-    padding: 22px 16px;
+    padding: 20px 16px;
   }
 
   .confirmation-icon {
@@ -1040,8 +1011,7 @@ nav a:hover {
     line-height: 1.55;
   }
 
-  .confirmation-actions,
-  .confirmation-info {
+  .confirmation-actions {
     display: grid;
     grid-template-columns: 1fr;
   }
