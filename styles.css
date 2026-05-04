@@ -600,6 +600,119 @@ nav a:hover {
   line-height: 1.5;
 }
 
+.confirmation-page,
+.confirmation-main {
+  min-height: 100vh;
+}
+
+.confirmation-hero {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 34px 0;
+  background:
+    linear-gradient(130deg, rgba(17, 17, 17, 0.08), transparent 34%),
+    radial-gradient(circle at 76% 18%, rgba(15, 124, 255, 0.22), transparent 30%);
+}
+
+.confirmation-shell {
+  display: grid;
+  justify-items: center;
+  gap: 22px;
+}
+
+.confirmation-brand img {
+  display: block;
+  width: min(380px, 100%);
+  max-height: 76px;
+  object-fit: contain;
+}
+
+.confirmation-card {
+  width: min(720px, 100%);
+  padding: clamp(26px, 5vw, 48px);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 247, 240, 0.98), rgba(255, 255, 255, 0.92));
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.confirmation-icon {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, #1c6fe6, var(--accent));
+  box-shadow: 0 16px 34px rgba(15, 124, 255, 0.28);
+}
+
+.confirmation-icon span {
+  width: 28px;
+  height: 16px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(-45deg) translate(2px, -2px);
+}
+
+.confirmation-card .eyebrow {
+  margin-bottom: 14px;
+}
+
+.confirmation-card h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.confirmation-card p:not(.eyebrow) {
+  max-width: 58ch;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.confirmation-info {
+  width: min(820px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.confirmation-info article {
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  text-align: center;
+}
+
+.confirmation-info strong,
+.confirmation-info span {
+  display: block;
+}
+
+.confirmation-info strong {
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.confirmation-info span {
+  color: var(--muted);
+  line-height: 1.4;
+}
+
 @supports (animation-timeline: view()) {
   .section {
     opacity: 0;
@@ -784,7 +897,8 @@ nav a:hover {
   .repair-card,
   .about-card,
   .faq-card,
-  .contact-form {
+  .contact-form,
+  .confirmation-card {
     border-radius: 14px;
   }
 
@@ -892,5 +1006,43 @@ nav a:hover {
 
   .contact-form textarea {
     min-height: 120px;
+  }
+
+  .confirmation-hero {
+    align-items: start;
+    padding: 22px 0;
+  }
+
+  .confirmation-shell {
+    gap: 16px;
+  }
+
+  .confirmation-brand img {
+    max-width: min(280px, 100%);
+    max-height: 56px;
+  }
+
+  .confirmation-card {
+    padding: 22px 16px;
+  }
+
+  .confirmation-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .confirmation-card h1 {
+    font-size: 2rem;
+  }
+
+  .confirmation-card p:not(.eyebrow) {
+    font-size: 0.96rem;
+    line-height: 1.55;
+  }
+
+  .confirmation-actions,
+  .confirmation-info {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
