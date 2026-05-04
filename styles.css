@@ -16,10 +16,13 @@
 
 * {
   box-sizing: border-box;
+  min-width: 0;
 }
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 @keyframes fadeInUp {
@@ -35,6 +38,8 @@ html {
 }
 
 body {
+  width: 100%;
+  min-width: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
@@ -45,9 +50,22 @@ body {
   overflow-x: hidden;
 }
 
+.site-header,
+main,
+section {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .container {
@@ -70,12 +88,14 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  min-width: 0;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 0;
+  min-width: 0;
 }
 
 .brand-mark {
@@ -94,7 +114,7 @@ a {
 .brand-mark-image img {
   height: auto;
   width: auto;
-  max-width: 400px;
+  max-width: min(400px, 100%);
   max-height: 72px;
   object-fit: contain;
   display: block;
@@ -103,9 +123,12 @@ a {
 nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 24px;
   color: var(--muted);
   font-weight: 600;
+  min-width: 0;
 }
 
 nav a:hover {
@@ -601,6 +624,18 @@ nav a:hover {
 }
 
 @media (max-width: 920px) {
+  .nav {
+    gap: 14px;
+  }
+
+  .brand-mark-image img {
+    max-width: min(320px, 100%);
+  }
+
+  nav {
+    gap: 16px;
+  }
+
   .hero-grid,
   .about-grid,
   .contact-grid,
@@ -619,11 +654,7 @@ nav a:hover {
   }
 }
 
-@media (max-width: 640px) {
-  .container {
-    width: min(100% - 28px, 1120px);
-  }
-
+@media (max-width: 760px) {
   .nav {
     flex-direction: column;
     align-items: center;
@@ -635,6 +666,17 @@ nav a:hover {
   .brand {
     width: 100%;
     justify-content: center;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(100% - 28px, 1120px);
   }
 
   .brand-mark-image img {
