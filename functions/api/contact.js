@@ -1,5 +1,5 @@
-const OWNER_EMAIL = "said@univers-mobile.store";
-const FROM_EMAIL = "Said <said@univers-mobile.store>";
+const OWNER_EMAIL = "dit@univers-mobile.store";
+const FROM_EMAIL = "Dit <dit@univers-mobile.store>";
 const SITE_NAME = "Univers Mobile";
 const SITE_URL = "https://univers-mobile.store";
 
