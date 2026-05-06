@@ -125,7 +125,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 24px;
+  gap: 18px;
   color: var(--muted);
   font-weight: 600;
   min-width: 0;
@@ -394,6 +394,23 @@ nav a:hover {
   background: var(--accent-soft);
   color: #0756b8;
   font-weight: 800;
+}
+
+.card-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 14px;
+  color: var(--accent);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.secondary-link {
+  margin-left: 14px;
 }
 
 .service-card.highlight {
@@ -684,6 +701,50 @@ nav a:hover {
   margin-top: 28px;
 }
 
+.service-page-hero .hero-copy h1 {
+  max-width: 13ch;
+}
+
+.service-summary h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  line-height: 1.06;
+}
+
+.service-summary p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.service-list {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-list li {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--accent-line);
+  font-weight: 700;
+}
+
+.split-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.62fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.about-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+}
+
 @supports (animation-timeline: view()) {
   .section {
     opacity: 0;
@@ -723,6 +784,7 @@ nav a:hover {
   .hero-grid,
   .about-grid,
   .contact-grid,
+  .split-content,
   .repair-grid,
   .faq-grid,
   .services-grid {
@@ -771,7 +833,7 @@ nav a:hover {
   nav {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
     font-size: 0.86rem;
   }
@@ -952,6 +1014,16 @@ nav a:hover {
     width: 100%;
     justify-content: center;
     border-radius: 12px;
+  }
+
+  .card-link {
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .secondary-link {
+    margin-left: 0;
   }
 
   .contact-grid {
