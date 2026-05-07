@@ -788,6 +788,29 @@ nav a:hover {
   text-align: center;
 }
 
+.reviews-strip .container {
+  display: grid;
+  gap: 10px;
+}
+
+.review-button {
+  width: fit-content;
+  justify-self: center;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(17, 17, 17, 0.16);
+}
+
+.review-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(17, 17, 17, 0.2);
+}
+
 .service-contact-section {
   padding-top: 22px;
 }
@@ -1267,6 +1290,11 @@ nav a:hover {
     border-radius: 14px;
     font-size: 0.98rem;
     line-height: 1.35;
+  }
+
+  .review-button {
+    width: 100%;
+    border-radius: 12px;
   }
 
   .service-contact-section,
