@@ -26,9 +26,9 @@
         "@type": "LocalBusiness",
         "@id": "https://univers-mobile.store/#business",
         "name": "Univers Mobile",
-        "url": "https://univers-mobile.store/",
+        "url": "https://univers-mobile.store",
         "image": "https://univers-mobile.store/logo.png",
-        "telephone": "+33689075965",
+        "telephone": "0689075965",
         "priceRange": "€€",
         "address": {
           "@type": "PostalAddress",
@@ -42,6 +42,11 @@
           "latitude": 44.201921,
           "longitude": 0.616899
         },
+        "openingHours": [
+          "Mo-Fr 09:00-12:00",
+          "Mo-Fr 14:00-19:00",
+          "Sa 10:30-18:00"
+        ],
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -58,16 +63,15 @@
           {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Saturday",
-            "opens": "09:00",
-            "closes": "12:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "14:00",
-            "closes": "18:30"
+            "opens": "10:30",
+            "closes": "18:00"
           }
         ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.3",
+          "reviewCount": "39"
+        },
         "areaServed": ["Agen", "Boé", "Le Passage", "Bon-Encontre", "Foulayronnes"],
         "makesOffer": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Réparation écran téléphone" } },
@@ -235,6 +239,11 @@
             </div>
 
             <div class="repair-grid">
+              <article class="repair-card">
+                <h3>Réparation téléphone</h3>
+                <p>La page centrale pour écran, batterie, charge, iPhone et Samsung à Agen.</p>
+                <a class="card-link" href="./reparation-telephone-agen.html">Réparation téléphone Agen</a>
+              </article>
               <article class="repair-card">
                 <h3>Réparation écran iPhone et Samsung</h3>
                 <p>Remplacement d'écran fissuré, cassé ou tactile défectueux selon le modèle.</p>
