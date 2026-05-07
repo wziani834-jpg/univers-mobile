@@ -872,6 +872,13 @@ nav a:hover {
   padding-bottom: 28px;
 }
 
+.compact-service-hero .btn-primary,
+.service-contact-details .btn-primary {
+  background: linear-gradient(145deg, #2a211c, #111111);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(17, 17, 17, 0.2);
+}
+
 .compact-service-section {
   padding-top: 28px;
 }
