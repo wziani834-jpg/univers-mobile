@@ -409,6 +409,23 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.outline-link {
+  margin-top: 14px;
+  padding: 11px 14px;
+  border: 1px solid rgba(17, 17, 17, 0.16);
+  border-radius: 14px;
+  color: var(--primary);
+  background: transparent;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.outline-link:hover {
+  text-decoration: none;
+  background: rgba(17, 17, 17, 0.04);
+  border-color: rgba(17, 17, 17, 0.24);
+}
+
 .secondary-link {
   margin-left: 14px;
 }
