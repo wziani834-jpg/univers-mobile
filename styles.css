@@ -771,6 +771,80 @@ nav a:hover {
   margin-left: 0;
 }
 
+.reviews-strip {
+  padding: 0 0 22px;
+}
+
+.reviews-strip p {
+  margin: 0;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--accent-line);
+  box-shadow: 0 14px 30px rgba(16, 35, 61, 0.06);
+  color: var(--primary-dark);
+  font-size: 1.04rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.service-contact-section {
+  padding-top: 22px;
+}
+
+.service-contact-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 22px;
+  align-items: center;
+  padding: 26px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 247, 240, 0.98), rgba(255, 255, 255, 0.92));
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: var(--shadow);
+}
+
+.service-contact-card h2 {
+  margin: 14px 0 0;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  line-height: 1.08;
+}
+
+.service-contact-details {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid var(--accent-line);
+  color: var(--text);
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.service-contact-details strong {
+  font-size: 1.08rem;
+}
+
+.service-contact-details span {
+  color: var(--muted);
+}
+
+.service-contact-details a {
+  width: fit-content;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.service-faq-section {
+  padding-top: 28px;
+}
+
+.service-faq-section .faq-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 @supports (animation-timeline: view()) {
   .section {
     opacity: 0;
@@ -1147,5 +1221,47 @@ nav a:hover {
   .about-card .card-link {
     width: 100%;
     justify-content: center;
+  }
+
+  .reviews-strip {
+    padding-bottom: 12px;
+  }
+
+  .reviews-strip p {
+    padding: 12px 14px;
+    border-radius: 14px;
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .service-contact-section,
+  .service-faq-section {
+    padding-top: 18px;
+  }
+
+  .service-contact-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 18px;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .service-contact-card h2 {
+    font-size: 1.72rem;
+  }
+
+  .service-contact-details {
+    padding: 16px;
+    border-radius: 14px;
+    text-align: center;
+  }
+
+  .service-contact-details a {
+    width: 100%;
+  }
+
+  .service-faq-section .faq-grid {
+    grid-template-columns: 1fr;
   }
 }
