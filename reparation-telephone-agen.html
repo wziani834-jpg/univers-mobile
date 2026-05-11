@@ -17,7 +17,7 @@
     <meta name="twitter:description" content="Réparation de téléphone à Agen : écran, batterie, charge, iPhone et Samsung chez Univers Mobile." />
     <meta name="twitter:image" content="https://univers-mobile.store/logo.png" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="./styles.css?v=20260509-3" />
+    <link rel="stylesheet" href="./styles.css?v=20260511-1" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -29,6 +29,7 @@
             "url": "https://univers-mobile.store/",
             "image": "https://univers-mobile.store/logo.png",
             "telephone": "0689075965",
+            "priceRange": "€€",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "47 Rue Montesquieu",
@@ -36,25 +37,63 @@
               "addressLocality": "Agen",
               "addressCountry": "FR"
             },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 44.201921,
+              "longitude": 0.616899
+            },
             "openingHours": [
               "Mo-Fr 09:00-12:00",
               "Mo-Fr 14:00-19:00",
               "Sa 10:30-18:00"
             ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "12:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "14:00",
+                "closes": "19:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "10:30",
+                "closes": "18:00"
+              }
+            ],
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.3",
               "reviewCount": "39"
-            }
+            },
+            "areaServed": ["Agen", "Boé", "Le Passage", "Bon-Encontre", "Foulayronnes"],
+            "sameAs": [
+              "https://www.google.com/maps/place/UNIVERS+MOBILES/@44.2019248,0.6143241,17z/data=!3m1!4b1!4m6!3m5!1s0x12abb323bd193277:0x452ed7280f6c8651!8m2!3d44.201921!4d0.616899!16s%2Fg%2F1hc12j7lh?entry=ttu"
+            ]
           },
           {
             "@type": "Service",
             "@id": "https://univers-mobile.store/reparation-telephone-agen.html#service",
             "name": "Réparation téléphone à Agen",
             "serviceType": "Réparation de téléphone",
-            "description": "Diagnostic et réparation de téléphone à Agen : écran, batterie, connecteur de charge, iPhone et Samsung.",
+            "description": "Diagnostic et réparation de téléphone à Agen : écran cassé, batterie faible, connecteur de charge, iPhone, Samsung et smartphones compatibles.",
             "provider": { "@id": "https://univers-mobile.store/#business" },
-            "areaServed": ["Agen", "Boé", "Le Passage", "Bon-Encontre", "Foulayronnes"]
+            "areaServed": ["Agen", "Boé", "Le Passage", "Bon-Encontre", "Foulayronnes"],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Réparations téléphone à Agen",
+              "itemListElement": [
+                { "@type": "Offer", "priceCurrency": "EUR", "price": "69", "description": "Réparation écran téléphone dès 69 € selon le modèle." },
+                { "@type": "Offer", "priceCurrency": "EUR", "price": "39", "description": "Changement batterie téléphone dès 39 € selon le modèle." },
+                { "@type": "Offer", "priceCurrency": "EUR", "price": "49", "description": "Réparation connecteur de charge dès 49 € selon le modèle." }
+              ]
+            }
           },
           {
             "@type": "BreadcrumbList",
@@ -80,26 +119,10 @@
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Quels téléphones réparez-vous à Agen ?",
+                "name": "Où faire réparer un téléphone à Agen ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Univers Mobile prend en charge les pannes courantes sur iPhone, Samsung Galaxy, Xiaomi, Oppo, Huawei et d'autres smartphones compatibles."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Faut-il prendre rendez-vous ?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ce n'est pas obligatoire. Vous pouvez passer directement en boutique ou appeler avant pour vérifier la disponibilité d'une pièce."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Où se trouve la boutique Univers Mobile ?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Univers Mobile se trouve au 47 Rue Montesquieu, 47000 Agen."
+                  "text": "Univers Mobile répare les téléphones au 47 Rue Montesquieu, avec diagnostic et devis avant intervention."
                 }
               },
               {
@@ -107,7 +130,55 @@
                 "name": "Combien coûte une réparation de téléphone ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Le prix dépend du modèle, de la pièce nécessaire et du type de panne. Un devis est annoncé avant intervention."
+                  "text": "Le prix dépend du modèle et de la panne. À titre indicatif, un écran commence dès 69 €, une batterie dès 39 € et un connecteur de charge dès 49 €."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Réparez-vous les écrans cassés ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, Univers Mobile prend en charge les écrans cassés, fissurés, les problèmes tactiles et les défauts d'affichage selon le modèle."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je faire changer une batterie de téléphone ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, la boutique vérifie l'autonomie, la charge et l'état du téléphone avant de confirmer si le changement de batterie est adapté."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Faut-il prendre rendez-vous chez Univers Mobile ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ce n'est pas obligatoire. Vous pouvez passer directement en boutique ou appeler avant pour vérifier la disponibilité d'une pièce."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quels modèles de téléphone réparez-vous ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Univers Mobile intervient sur iPhone, Samsung Galaxy, Xiaomi, Oppo, Huawei et d'autres smartphones compatibles selon la panne et la pièce disponible."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps prend une réparation ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le délai dépend du modèle, de la panne et de la pièce disponible. La boutique donne une estimation après vérification du téléphone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "La boutique vérifie-t-elle la panne avant le devis ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, le modèle, les symptômes et les composants concernés sont vérifiés avant d'annoncer le devis et de lancer la réparation."
                 }
               }
             ]
@@ -133,14 +204,23 @@
     </header>
 
     <main>
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <div class="container">
+          <a href="./index.html">Accueil</a>
+          <span aria-hidden="true">›</span>
+          <span>Réparation téléphone Agen</span>
+        </div>
+      </nav>
+
       <section class="hero service-page-hero compact-service-hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">Réparation téléphone à Agen</span>
+            <span class="eyebrow">Réparation téléphone</span>
             <h1>Réparation de téléphone à Agen</h1>
-            <p>Votre téléphone ne fonctionne plus correctement ? Univers Mobile vous accueille à Agen pour identifier la panne, expliquer la réparation possible et annoncer un devis clair avant intervention.</p>
+            <p>Votre téléphone ne fonctionne plus correctement ? Univers Mobile vous accueille au 47 Rue Montesquieu pour identifier la panne, expliquer la réparation possible et annoncer un devis clair avant intervention.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:+33689075965">Appeler maintenant</a>
+              <a class="btn btn-secondary" href="./index.html#contact">Demander un devis</a>
             </div>
           </div>
           <div class="hero-panel service-summary">
@@ -177,19 +257,88 @@
         </div>
       </section>
 
-      <section class="section compact-service-section">
+      <section class="section section-alt local-seo-section">
         <div class="container split-content">
           <div class="section-heading">
-            <span class="eyebrow">Ce qu'on répare</span>
-            <h2>Un service simple pour les pannes courantes</h2>
-            <p>Passez directement en boutique avec votre smartphone. L'équipe vérifie le modèle, le problème constaté et la disponibilité des pièces avant de lancer la réparation.</p>
+            <span class="eyebrow">Boutique locale</span>
+            <h2>Un réparateur téléphone au 47 Rue Montesquieu</h2>
+            <p>Univers Mobile accueille les clients de la ville et des communes proches pour les réparations courantes de smartphone. Vous pouvez passer en boutique ou appeler avant de venir pour vérifier la disponibilité d'une pièce.</p>
           </div>
-          <div class="quick-links-grid">
-            <a class="quick-link-card page-link-button" href="./reparation-ecran-agen.html">Voir la page écran</a>
-            <a class="quick-link-card page-link-button" href="./reparation-batterie-agen.html">Voir la page batterie</a>
-            <a class="quick-link-card page-link-button" href="./reparation-connecteur-charge-agen.html">Voir la page charge</a>
-            <a class="quick-link-card page-link-button" href="./reparation-iphone-agen.html">Voir la page iPhone</a>
-            <a class="quick-link-card page-link-button" href="./reparation-samsung-agen.html">Voir la page Samsung</a>
+          <div class="local-proof-grid">
+            <article class="faq-card">
+              <h3>Adresse de la boutique</h3>
+              <p>La boutique se trouve au 47 Rue Montesquieu pour déposer un téléphone en panne ou demander un diagnostic.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Zones proches desservies</h3>
+              <p>Univers Mobile accompagne aussi les clients venant de Boé, Le Passage, Bon-Encontre et Foulayronnes.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Diagnostic avant réparation</h3>
+              <p>L'équipe vérifie le modèle, les symptômes et la pièce nécessaire avant de confirmer le devis.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-service-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Pannes prises en charge</span>
+            <h2>Écran, batterie, charge, iPhone et Samsung</h2>
+            <p>Cette page centralise les principales réparations possibles en boutique. Chaque panne est vérifiée avant intervention pour éviter de remplacer une pièce inutilement.</p>
+          </div>
+          <div class="quick-links-grid seo-service-grid">
+            <a class="quick-link-card" href="./reparation-ecran-agen.html">Réparation écran téléphone</a>
+            <a class="quick-link-card" href="./reparation-batterie-agen.html">Changement batterie téléphone</a>
+            <a class="quick-link-card" href="./reparation-connecteur-charge-agen.html">Réparation connecteur de charge</a>
+            <a class="quick-link-card" href="./reparation-iphone-agen.html">Réparation iPhone</a>
+            <a class="quick-link-card" href="./reparation-samsung-agen.html">Réparation Samsung</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Déroulement</span>
+            <h2>Comment se passe une réparation de téléphone chez Univers Mobile ?</h2>
+          </div>
+          <div class="process-grid">
+            <article class="faq-card">
+              <span class="step-number">1</span>
+              <h3>Vérification du modèle</h3>
+              <p>La référence du téléphone est contrôlée pour identifier les pièces compatibles et éviter les erreurs de devis.</p>
+            </article>
+            <article class="faq-card">
+              <span class="step-number">2</span>
+              <h3>Diagnostic de la panne</h3>
+              <p>Écran, batterie, connecteur, charge ou autre symptôme : la panne est vérifiée avant intervention.</p>
+            </article>
+            <article class="faq-card">
+              <span class="step-number">3</span>
+              <h3>Devis annoncé</h3>
+              <p>Le prix et le délai estimé sont communiqués avant de lancer la réparation du téléphone.</p>
+            </article>
+            <article class="faq-card">
+              <span class="step-number">4</span>
+              <h3>Réparation en boutique</h3>
+              <p>L'intervention est réalisée selon la disponibilité de la pièce et l'état général de l'appareil.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-band">
+          <div>
+            <span class="eyebrow">Prix et devis</span>
+            <h2>Un devis clair avant réparation</h2>
+            <p>Les tarifs varient selon le modèle et la pièce : écran dès 69 €, batterie dès 39 €, connecteur de charge dès 49 €. Pour un prix précis, passez en boutique ou envoyez une demande de devis.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+33689075965">Appeler la boutique</a>
+            <a class="btn btn-secondary" href="./index.html#contact">Demander un devis</a>
           </div>
         </div>
       </section>
@@ -198,24 +347,40 @@
         <div class="container">
           <div class="section-heading">
             <span class="eyebrow">FAQ</span>
-            <h2>Questions fréquentes</h2>
+            <h2>Questions fréquentes avant de passer en boutique</h2>
           </div>
           <div class="faq-grid">
             <article class="faq-card">
-              <h3>Quels téléphones réparez-vous à Agen ?</h3>
-              <p>Univers Mobile prend en charge les pannes courantes sur iPhone, Samsung Galaxy, Xiaomi, Oppo, Huawei et d'autres smartphones compatibles.</p>
-            </article>
-            <article class="faq-card">
-              <h3>Faut-il prendre rendez-vous ?</h3>
-              <p>Ce n'est pas obligatoire. Vous pouvez passer directement en boutique ou appeler avant pour vérifier la disponibilité d'une pièce.</p>
-            </article>
-            <article class="faq-card">
-              <h3>Où se trouve la boutique Univers Mobile ?</h3>
-              <p>Univers Mobile se trouve au 47 Rue Montesquieu, 47000 Agen.</p>
+              <h3>Où faire réparer un téléphone à Agen ?</h3>
+              <p>Univers Mobile répare les téléphones au 47 Rue Montesquieu, avec diagnostic et devis avant intervention.</p>
             </article>
             <article class="faq-card">
               <h3>Combien coûte une réparation de téléphone ?</h3>
-              <p>Le prix dépend du modèle, de la pièce nécessaire et du type de panne. Un devis est annoncé avant intervention.</p>
+              <p>Le prix dépend du modèle et de la panne. À titre indicatif, un écran commence dès 69 €, une batterie dès 39 € et un connecteur de charge dès 49 €.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Réparez-vous les écrans cassés ?</h3>
+              <p>Oui, Univers Mobile prend en charge les écrans cassés, fissurés, les problèmes tactiles et les défauts d'affichage selon le modèle.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Puis-je faire changer une batterie de téléphone ?</h3>
+              <p>Oui, la boutique vérifie l'autonomie, la charge et l'état du téléphone avant de confirmer si le changement de batterie est adapté.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Faut-il prendre rendez-vous chez Univers Mobile ?</h3>
+              <p>Ce n'est pas obligatoire. Vous pouvez passer directement en boutique ou appeler avant pour vérifier la disponibilité d'une pièce.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Quels modèles de téléphone réparez-vous ?</h3>
+              <p>Univers Mobile intervient sur iPhone, Samsung Galaxy, Xiaomi, Oppo, Huawei et d'autres smartphones compatibles selon la panne et la pièce disponible.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Combien de temps prend une réparation ?</h3>
+              <p>Le délai dépend du modèle, de la panne et de la pièce disponible. La boutique donne une estimation après vérification du téléphone.</p>
+            </article>
+            <article class="faq-card">
+              <h3>La boutique vérifie-t-elle la panne avant le devis ?</h3>
+              <p>Oui, le modèle, les symptômes et les composants concernés sont vérifiés avant d'annoncer le devis et de lancer la réparation.</p>
             </article>
           </div>
         </div>
