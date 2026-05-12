@@ -1013,9 +1013,10 @@ nav a:hover {
 .service-area-card {
   padding: 28px;
   border-radius: var(--radius);
-  background: linear-gradient(145deg, #fff7f0, #ead5c3);
-  border: 1px solid rgba(17, 17, 17, 0.12);
-  box-shadow: 0 18px 42px rgba(17, 17, 17, 0.08);
+  background: rgba(255, 247, 240, 0.72);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(17, 17, 17, 0.06);
+  backdrop-filter: blur(10px);
 }
 
 .service-area-card h2 {
