@@ -922,7 +922,8 @@ nav a:hover {
 
 .quick-link-card {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
   min-width: 0;
@@ -932,13 +933,31 @@ nav a:hover {
   background: linear-gradient(145deg, #fff7f0, #ead5c3);
   border: 1px solid rgba(17, 17, 17, 0.14);
   color: var(--text);
-  font-weight: 800;
   line-height: 1.25;
   text-align: left;
   overflow-wrap: normal;
   word-break: normal;
   hyphens: none;
   box-shadow: 0 14px 30px rgba(17, 17, 17, 0.08);
+}
+
+.quick-link-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--primary-dark);
+}
+
+.quick-link-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.quick-link-card .service-card-button {
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 12px;
+  background: #111111;
+  color: #fff;
 }
 
 .quick-link-card:hover {
@@ -1511,8 +1530,12 @@ nav a:hover {
   .quick-link-card {
     min-height: 54px;
     border-radius: 14px;
-    justify-content: center;
-    text-align: center;
+    align-items: stretch;
+    text-align: left;
     white-space: normal;
+  }
+
+  .quick-link-card .service-card-button {
+    width: 100%;
   }
 }
