@@ -757,6 +757,12 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 30px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 247, 240, 0.94)),
+    #fff7f0;
+  box-shadow: 0 24px 70px rgba(17, 17, 17, 0.1);
 }
 
 .service-summary h2 {
@@ -787,6 +793,37 @@ nav a:hover {
   border: 1px solid var(--accent-line);
   font-weight: 700;
   line-height: 1.35;
+}
+
+.price-list {
+  gap: 12px;
+}
+
+.price-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 16px;
+  background: #fffdf9;
+  border-color: rgba(17, 17, 17, 0.12);
+  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.05);
+}
+
+.price-list span {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.price-list strong {
+  min-width: 86px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.92rem;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .split-content {
@@ -1460,6 +1497,16 @@ nav a:hover {
     padding: 11px 12px;
     border-radius: 12px;
     text-align: center;
+  }
+
+  .price-list li {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .price-list strong {
+    width: 100%;
   }
 
   .about-card .card-link {
