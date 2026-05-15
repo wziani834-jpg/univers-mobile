@@ -69,7 +69,7 @@ a {
 }
 
 .container {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1120px, calc(100% - clamp(28px, 6vw, 48px)));
   margin: 0 auto;
 }
 
@@ -136,14 +136,14 @@ nav a:hover {
 }
 
 .hero {
-  padding: 72px 0 40px;
+  padding: clamp(42px, 8vw, 72px) 0 clamp(30px, 5vw, 40px);
   animation: fadeInUp 0.75s ease both;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-  gap: 28px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: clamp(20px, 4vw, 28px);
   align-items: center;
 }
 
@@ -169,7 +169,7 @@ nav a:hover {
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.4rem, 5vw, 4.7rem);
+  font-size: clamp(2.25rem, 5vw, 4.7rem);
   max-width: 11ch;
 }
 
@@ -197,6 +197,8 @@ nav a:hover {
   border-radius: 14px;
   border: 1px solid transparent;
   font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
   transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
 }
 
@@ -322,7 +324,7 @@ nav a:hover {
 }
 
 .section {
-  padding: 56px 0;
+  padding: clamp(40px, 7vw, 56px) 0;
   animation: fadeInUp 0.7s ease both;
 }
 
@@ -558,7 +560,7 @@ nav a:hover {
   border-radius: 18px;
   border: 1px solid rgba(17, 17, 17, 0.08);
   background: var(--surface);
-  min-height: 360px;
+  min-height: clamp(260px, 45vw, 360px);
   aspect-ratio: 16 / 7;
 }
 
@@ -1084,10 +1086,6 @@ nav a:hover {
   line-height: 1.65;
 }
 
-
-  background: var(--bg);
-}
-
 .breadcrumb .container {
   display: flex;
   flex-wrap: wrap;
@@ -1168,7 +1166,8 @@ nav a:hover {
   .split-content,
   .repair-grid,
   .faq-grid,
-  .services-grid {
+  .services-grid,
+  .service-contact-card {
     grid-template-columns: 1fr;
   }
 
@@ -1177,11 +1176,29 @@ nav a:hover {
   }
 
   .hero-copy h1 {
-    max-width: none;
+    max-width: 16ch;
+  }
+
+  .hero-panel {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .repair-grid,
+  .faq-grid,
+  .services-grid,
+  .local-proof-grid,
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 760px) {
+  .site-header {
+    position: static;
+  }
+
   .nav {
     flex-direction: column;
     align-items: center;
@@ -1203,7 +1220,7 @@ nav a:hover {
 
 @media (max-width: 640px) {
   .container {
-    width: min(100% - 28px, 1120px);
+    width: min(100% - 24px, 1120px);
   }
 
   .brand-mark-image img {
@@ -1259,8 +1276,8 @@ nav a:hover {
 
   .hero-copy h1 {
     margin: 14px auto 12px;
-    max-width: 13ch;
-    font-size: 2.15rem;
+    max-width: 14ch;
+    font-size: clamp(2rem, 10vw, 2.15rem);
     line-height: 1.08;
   }
 
@@ -1281,7 +1298,9 @@ nav a:hover {
 
   .hero-actions,
   .field-row,
-  .stats {
+  .stats,
+  .local-proof-grid,
+  .process-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1289,6 +1308,12 @@ nav a:hover {
     display: grid;
     gap: 10px;
     margin: 22px 0 16px;
+  }
+
+  .services-grid,
+  .repair-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
   }
 
   .btn {
@@ -1427,8 +1452,19 @@ nav a:hover {
   }
 
   .contact-details,
-  .hours-card {
+  .hours-card,
+  .service-area-card {
     padding: 16px;
+  }
+
+  .service-area-card h2 {
+    font-size: 1.45rem;
+    line-height: 1.18;
+  }
+
+  .map-embed {
+    min-height: 240px;
+    aspect-ratio: 4 / 3;
   }
 
   .contact-form input,
@@ -1600,5 +1636,67 @@ nav a:hover {
 
   .quick-link-card .service-card-button {
     width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(100% - 20px, 1120px);
+  }
+
+  .brand-mark-image img {
+    max-width: min(240px, 100%);
+  }
+
+  nav {
+    font-size: 0.82rem;
+    gap: 6px;
+  }
+
+  nav a {
+    min-height: 36px;
+    padding: 7px 5px;
+  }
+
+  .hero-copy h1 {
+    max-width: none;
+    font-size: clamp(1.82rem, 10vw, 2rem);
+  }
+
+  .hero-badges {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-badges li:nth-child(3) {
+    grid-column: auto;
+  }
+
+  .hero-panel,
+  .service-card,
+  .repair-card,
+  .about-card,
+  .faq-card,
+  .contact-form,
+  .service-summary,
+  .service-contact-card,
+  .service-area-card,
+  .cta-band {
+    padding: 14px;
+  }
+
+  .device-screen {
+    min-height: 210px;
+  }
+
+  .section-heading h2,
+  .about-grid h2,
+  .service-contact-card h2,
+  .service-area-card h2 {
+    font-size: 1.55rem;
+  }
+
+  .price-list li,
+  .service-list li {
+    text-align: center;
   }
 }
