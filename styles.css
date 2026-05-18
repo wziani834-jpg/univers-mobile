@@ -1040,7 +1040,6 @@ nav a:hover {
 
 @supports (animation-timeline: view()) {
   .section {
-    opacity: 0;
     animation-timeline: view();
     animation-range: entry 12% cover 32%;
   }
@@ -1072,6 +1071,7 @@ nav a:hover {
   border: 1px solid rgba(17, 17, 17, 0.14);
   box-shadow: 0 18px 42px rgba(17, 17, 17, 0.08);
   color: #111111;
+  opacity: 1;
 }
 
 .service-area-card .eyebrow {
