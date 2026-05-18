@@ -416,7 +416,7 @@ nav a:hover {
   width: 100%;
   margin-top: 12px;
   padding: 10px;
-  border: 1.5px solid #000000;
+  border: 0;
   border-radius: 8px;
   color: #ffffff;
   background: #000000;
@@ -436,7 +436,7 @@ nav a:hover {
 .service-card .outline-link {
   background: #000000;
   color: #ffffff;
-  border-color: #000000;
+  border: 0;
 }
 
 .service-card .outline-link::after {
