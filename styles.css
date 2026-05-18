@@ -412,17 +412,15 @@ nav a:hover {
 }
 
 .outline-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  display: block;
   width: 100%;
-  margin-top: 14px;
-  padding: 12px 16px;
+  margin-top: 12px;
+  padding: 10px;
   border: 1.5px solid #000000;
-  border-radius: 14px;
+  border-radius: 8px;
   color: #ffffff;
   background: #000000;
+  text-align: center;
   text-decoration: none;
   box-shadow: none;
   font-size: 0.98rem;
@@ -435,10 +433,19 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-.outline-link::after {
-  content: "→";
-  font-size: 1rem;
-  line-height: 1;
+.service-card .outline-link {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.service-card .outline-link::after {
+  content: none;
+}
+
+.service-card .outline-link:hover {
+  background: #111111;
+  border-color: #111111;
 }
 
 .secondary-link {
