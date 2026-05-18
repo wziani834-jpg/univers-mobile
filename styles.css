@@ -467,6 +467,8 @@ nav a:hover {
 }
 
 .repair-card {
+  display: flex;
+  flex-direction: column;
   padding: 22px;
 }
 
@@ -488,6 +490,10 @@ nav a:hover {
   margin: 0;
   color: var(--muted);
   line-height: 1.65;
+}
+
+.repair-card > a:last-child {
+  margin-top: auto !important;
 }
 
 .section-alt {
